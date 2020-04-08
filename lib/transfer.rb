@@ -9,6 +9,6 @@ class Transfer
   end 
   
   def valid?
-    if sender == Bankaccount.name 
+    sender.valid? && receiver.valid? 
   end 
 end
